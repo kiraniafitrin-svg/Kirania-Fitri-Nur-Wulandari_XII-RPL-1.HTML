@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PINKFLASH MAKE UP</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #ffe6f0; /* Warna latar belakang pink muda */
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Navigasi */
+        nav {
+            background-color: #e91e63;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Form */
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 40px auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        button[type="submit"] {
+            background-color: #e91e63;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #d81b60;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #e91e63;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigasi -->
+<nav>
+    <div class="logo">PINKFLASH</div>
+    <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Tentang Kami</a></li>
+        <li><a href="#">Kontak</a></li>
+    </ul>
+</nav>
+
+<!-- Form -->
+<h1 style="text-align: center; margin-top: 30px;">PINKFLASH MAKE UP</h1>
+
+<form action="" method="POST" enctype="multipart/form-data">
+    <label for="Pinkflash Make Up">Nama Pembeli:</label>
+    <input type="text" id="Pinkflash Make Up" name="Pinkflash Make Up" required>
+
+    <label for="kategori">Kategori Barang:</label>
+    <select id="kategori" name="kategori" required>
+        <option value="" disabled selected>Pilih Kategori</option>
+        <option value="Eyeliner">Eyeliner</option>
+        <option value="Mascara">Mascara</option>
+        <option value="Blush On">Blush On</option>
+        <option value="Lip matte">Lip matte</option>
+        <option value="Eye shadow">Eye shadow</option>
+        <option value="Powder Oil Control">Powder Oil Control</option>
+    </select>
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" required>
+    
+    <label for="Jumlah pesanan">Jumlah pesanan:</label>
+    <input type="number" id="Jumlah pesanan" name="Jumlah pesanan" required>
+
+    <label for="Alamat">Alamat:</label>
+    <textarea id="Alamat" name="Alamat" required></textarea>
+
+    <label for="Nomor telepon">Nomor telepon:</label>
+    <input type="number" id="Nomor telepon" name="Nomor telepon" required>
+
+    <button type="submit" name="submit">Beli Produk</button>
+</form>
+
+<!-- Footer -->
+<footer>
+    &copy; 2025 PINKFLASH MAKE UP. All rights reserved.
+</footer>
+
+</body>
+</html>
